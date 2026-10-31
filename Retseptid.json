@@ -1,0 +1,245 @@
+[
+    {
+        "id": 1,
+        "nimi": "Pannkoogid",
+        "portsioonid": 4,
+        "koostisosad": [
+            {"nimi": "piim", "kogus": 500, "ühik": "ml"},
+            {"nimi": "jahu", "kogus": 200, "ühik": "g"},
+            {"nimi": "muna", "kogus": 2, "ühik": "tk"},
+            {"nimi": "suhkur", "kogus": 1, "ühik": "spl"},
+            {"nimi": "sool", "kogus": 0.5, "ühik": "tl"},
+            {"nimi": "taimeõli", "kogus": 3, "ühik": "spl"}
+         ],
+         "valmistamine": [
+             "Klopi munad suhkru ja soolaga lahti.",
+             "Lisa piim ja sega korralikult.",
+             "Lisa järk-järgult jahu ja sega ühtlaseks tainaks.",
+             "Lisa taimeõli ja sega uuesti.",
+             "Kuumuta pann ja prae pannkoogid mõlemalt poolt kuldpruuniks."
+         ]
+    },
+    {
+        "id": 2,
+        "nimi": "Praemunad",
+        "portsioonid": 1,
+        "koostisosad": [
+            {"nimi": "muna", "kogus": 3, "ühik": "tk"},
+            {"nimi": "või", "kogus": 20, "ühik": "g"},
+            {"nimi": "sool", "kogus": 1, "ühik": "näputäis"}
+        ],
+        "valmistamine": [
+            "Kuumuta pann keskmisel kuumusel.",
+            "Lisa pannile või ja lase sellel sulada.",
+            "Löö munad ettevaatlikult pannile.",
+            "Prae mune umbes 3-4 minutit, kuni munavalged on hüübinud.",
+            "Lisa sool ja serveeri kohe."
+        ]
+    },
+    {
+       "id": 3,
+        "nimi": "Omlett",
+        "portsioonid": 1,
+        "koostisosad": [
+            {"nimi": "muna", "kogus": 3, "ühik": "tk"},
+            {"nimi": "piim", "kogus": 50, "ühik": "ml"},
+            {"nimi": "või", "kogus": 30, "ühik": "g"},
+            {"nimi": "sool", "kogus": 1, "ühik": "näputäis"}
+        ],
+        "valmistamine": [
+            "Löö munad kaussi.",
+            "Lisa piim ja sool ning klopi segu ühtlaseks.",
+            "Kuumuta pann ja sulata sellel või.",
+            "Vala munasegu pannile.",
+            "Kata pann kaanega ja küpseta madalal kuumusel, kuni omlett on valmis.",
+            "Serveeri omlett soojalt."
+        ]
+    },
+    {
+        "id": 4,
+        "nimi": "Köögiviljasalat",
+        "portsioonid": 2,
+        "koostisosad": [
+            {"nimi": "tomat", "kogus": 270, "ühik": "g"},
+            {"nimi": "kurk", "kogus": 120, "ühik": "g"},
+            {"nimi": "hapukoor", "kogus": 125, "ühik": "g"},
+            {"nimi": "sibul", "kogus": 50, "ühik": "g"},
+            {"nimi": "till", "kogus": 10, "ühik": "g"},
+            {"nimi": "sool", "kogus": 1, "ühik": "näputäis"}
+        ],
+       "valmistamine": [
+           "Pese tomatid ja kurk hoolikalt.",
+           "Lõika tomatid ja kurk väikesteks tükkideks.",
+           "Koori sibul ja haki peeneks.",
+           "Haki till väikesteks tükkideks.",
+           "Pane kõik köögiviljad kaussi.",
+           "Lisa hapukoor ja sool.",
+           "Sega salat korralikult läbi ja serveeri."
+        ]
+    },
+    {
+        "id": 5,
+        "nimi": "Sõrnikud",
+        "portsioonid": 2,
+        "koostisosad": [
+            {"nimi": "kohupiim", "kogus": 250, "ühik": "g"},
+            {"nimi": "muna", "kogus": 1, "ühik": "tk"},
+            {"nimi": "suhkur", "kogus": 16, "ühik": "g"},
+            {"nimi": "jahu", "kogus": 45, "ühik": "g"},
+            {"nimi": "taimeõli", "kogus": 2, "ühik": "spl"}
+        ],
+        "valmistamine": [
+            "Pane kohupiim kaussi ja suru kahvliga pehmeks.",
+            "Lisa muna ja suhkur ning sega korralikult.",
+            "Lisa jahu ja sega ühtlaseks tainaks.",
+            "Vormi tainast väikesed ümmargused sõrnikud.",
+            "Kuumuta pannil taimeõli.",
+            "Prae sõrnikuid mõlemalt poolt kuldpruuniks.",
+            "Serveeri soojalt hapukoore või moosiga."
+        ]
+     },
+    {
+        "id": 6,
+        "nimi": "Pasta Bolognese",
+        "portsioonid": 4,
+        "koostisosad": [
+            {"nimi": "spagetid", "kogus": 250, "ühik": "g"},
+            {"nimi": "hakkliha", "kogus": 400, "ühik": "g"},
+            {"nimi": "tomatipasta", "kogus": 60, "ühik": "g"},
+            {"nimi": "tomat", "kogus": 1, "ühik": "tk"},
+            {"nimi": "sibul", "kogus": 1, "ühik": "tk"},
+            {"nimi": "küüslauk", "kogus": 2, "ühik": "küünt"},
+            {"nimi": "taimeõli", "kogus": 2, "ühik": "spl"},
+            {"nimi": "sool", "kogus": 1, "ühik": "tl"},
+            {"nimi": "must pipar", "kogus": 0.5, "ühik": "tl"},
+            {"nimi": "Itaalia ürdid", "kogus": 1, "ühik": "tl"}
+        ],
+        "valmistamine": [
+            "Koori sibul ja küüslauk ning haki peeneks.",
+            "Kuumuta pannil taimeõli.",
+            "Lisa sibul ja küüslauk ning prae paar minutit.",
+            "Lisa hakkliha ja prae, kuni liha on täielikult küpsenud.",
+            "Tükelda tomat ja lisa pannile.",
+            "Lisa tomatipasta, sool, pipar ja Itaalia ürdid.",
+            "Hauta kastet madalal kuumusel umbes 15 minutit.",
+            "Keeda spagetid soolaga maitsestatud vees vastavalt pakendi juhistele.",
+            "Nõruta spagetid ja serveeri koos Bolognese kastmega."
+        ]
+    },
+    {
+        "id": 7,
+        "nimi": "Makaronid hakklihaga",
+        "portsioonid": 4,
+        "koostisosad": [
+            {"nimi": "makaronid", "kogus": 500, "ühik": "g"},
+            {"nimi": "hakkliha", "kogus": 400, "ühik": "g"},
+            {"nimi": "sibul", "kogus": 1, "ühik": "tk"},
+            {"nimi": "taimeõli", "kogus": 2, "ühik": "spl"},
+            {"nimi": "sool", "kogus": 1, "ühik": "tl"},
+            {"nimi": "must pipar", "kogus": 0.5, "ühik": "tl"}
+        ],
+        "valmistamine": [
+            "Pane vesi potti ja lase keema.",
+            "Lisa sool ja keeda makaronid vastavalt pakendi juhistele.",
+            "Koori sibul ja haki väikesteks tükkideks.",
+            "Kuumuta pannil taimeõli ja prae sibul kuldseks.",
+            "Lisa hakkliha ja prae, kuni liha on täielikult küpsenud.",
+            "Maitsesta soola ja musta pipraga.",
+            "Nõruta makaronid ja lisa need pannile.",
+            "Sega makaronid hakklihaga korralikult läbi.",
+            "Serveeri roog soojalt."
+        ]
+    },
+    {
+        "id": 8,
+        "nimi": "Kotletid kartulipüreega",
+        "portsioonid": 3,
+        "koostisosad": [
+            {"nimi": "hakkliha", "kogus": 300, "ühik": "g"},
+            {"nimi": "sai", "kogus": 40, "ühik": "g"},
+            {"nimi": "piim", "kogus": 100, "ühik": "ml"},
+            {"nimi": "kartul", "kogus": 480, "ühik": "g"},
+            {"nimi": "või", "kogus": 30, "ühik": "g"},
+            {"nimi": "taimeõli", "kogus": 2, "ühik": "spl"},
+            {"nimi": "sool", "kogus": 1, "ühik": "tl"},
+            {"nimi": "must pipar", "kogus": 0.5, "ühik": "tl"}
+        ],
+        "valmistamine": [
+            "Koori kartulid ja lõika väiksemateks tükkideks.",
+            "Keeda kartulid soolaga maitsestatud vees pehmeks.",
+            "Leota saia 40 ml piimas.",
+            "Sega hakkliha, leotatud sai, sool ja pipar.",
+            "Vormi hakklihasegust väikesed kotletid.",
+            "Kuumuta pannil taimeõli.",
+            "Prae kotletid mõlemalt poolt pruuniks ja küpseta täielikult läbi.",
+            "Kurna keedetud kartulid.",
+            "Lisa kartulitele või ja ülejäänud 60 ml piima.",
+            "Tambi kartulid ühtlaseks püreeks.",
+            "Serveeri kotletid koos kartulipüreega."
+        ]
+    },
+    {
+        "id": 9,
+        "nimi": "Kartulivorm hakklihaga",
+        "portsioonid": 4,
+        "koostisosad": [
+            {"nimi": "kartul", "kogus": 400, "ühik": "g"},
+            {"nimi": "hakkliha", "kogus": 300, "ühik": "g"},
+            {"nimi": "paprika", "kogus": 200, "ühik": "g"},
+            {"nimi": "juust", "kogus": 50, "ühik": "g"},
+            {"nimi": "muna", "kogus": 1, "ühik": "tk"},
+            {"nimi": "küüslauk", "kogus": 1, "ühik": "küüs"},
+            {"nimi": "sinep", "kogus": 16, "ühik": "g"},
+            {"nimi": "majonees", "kogus": 75, "ühik": "g"},
+            {"nimi": "taimeõli", "kogus": 17, "ühik": "g"},
+            {"nimi": "sool", "kogus": 1, "ühik": "tl"},
+            {"nimi": "must pipar", "kogus": 0.5, "ühik": "tl"}
+        ],
+        "valmistamine": [
+            "Kuumuta ahi 180 kraadini.",
+            "Koori kartulid ja lõika õhukesteks viiludeks.",
+            "Pese paprika ja lõika väikesteks tükkideks.",
+            "Sega hakkliha muna, sinepi, küüslaugu, soola ja pipraga.",
+            "Määri ahjuvorm taimeõliga.",
+            "Aseta pool kartuliviiludest ahjuvormi põhja.",
+            "Lisa hakklihasegu ja paprika.",
+            "Kata ülejäänud kartuliviiludega.",
+            "Määri peale majonees.",
+            "Küpseta ahjus umbes 45-55 minutit, kuni kartulid ja hakkliha on küpsed.",
+            "Puista peale riivitud juust ja küpseta veel 10 minutit.",
+            "Lase vormil veidi jahtuda ja serveeri."
+        ]
+    },
+    {
+        "id": 10,
+        "nimi": "Kanapilaff",
+        "portsioonid": 5,
+        "koostisosad": [
+            {"nimi": "kana", "kogus": 500, "ühik": "g"},
+            {"nimi": "riis", "kogus": 500, "ühik": "g"},
+            {"nimi": "porgand", "kogus": 400, "ühik": "g"},
+            {"nimi": "sibul", "kogus": 80, "ühik": "g"},
+            {"nimi": "küüslauk", "kogus": 1, "ühik": "pea"},
+            {"nimi": "vesi", "kogus": 650, "ühik": "ml"},
+            {"nimi": "taimeõli", "kogus": 3, "ühik": "spl"},
+            {"nimi": "sool", "kogus": 1, "ühik": "tl"},
+            {"nimi": "vürtsköömned", "kogus": 1, "ühik": "tl"}
+        ],
+        "valmistamine": [
+            "Pese riis mitu korda külma veega.",
+            "Lõika kana väikesteks tükkideks.",
+            "Koori sibul ja porgandid.",
+            "Haki sibul ja lõika porgandid ribadeks.",
+            "Kuumuta sügaval pannil või potis taimeõli.",
+            "Prae kanatükid kuldpruuniks.",
+            "Lisa sibul ja porgandid ning prae mõned minutid.",
+            "Lisa sool ja vürtsköömned.",
+            "Laota pestud riis ühtlase kihina liha ja köögiviljade peale.",
+            "Lisa küüslaugupea ja vala ettevaatlikult juurde kuum vesi.",
+            "Kata pott kaanega ja hauta madalal kuumusel, kuni riis on pehme.",
+            "Kontrolli, et kana oleks täielikult küpsenud.",
+            "Sega plov ettevaatlikult läbi ja serveeri."
+        ]
+    }
+ ]
+
