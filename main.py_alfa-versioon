@@ -141,101 +141,52 @@ class RetseptiRakendus:
             fg="black"
         )
         pealkiri.pack(pady=10)
-        
-    # --- Keritav alla ---
-        peamine_raam = tk.Frame(
-            self.koostisosade_paneel,
-            bg=tausta_värv
-        )
-        peamine_raam.pack(fill="x")
-    
-    # Canvas
-        
-        canvas = tk.Canvas(
-            peamine_raam,
-            bg=tausta_värv,
-            height=200,
-            highlightthickness=0
-        )
-        canvas.pack(side="left", fill="x", expand=True)
-    
-    # Kerimisriba
-    
-        kerimisriba = tk.Scrollbar(
-            peamine_raam,
-            orient="vertical",
-            command=canvas.yview
-        )
-        kerimisriba.pack(side="right", fill="y")
-        canvas.configure(yscrollcommand=kerimisriba.set)
-    
-    # Sisemine raam, kuhu lähevad checkboxid
-        
-        sisemine_raam = tk.Frame(
-            canvas,
-            bg=tausta_värv
-        )
-        
-        canvas.create_window(
-            (0, 0),
-            window=sisemine_raam,
-            anchor="nw"
-        )
-        
-    # Uuendab scrollimise ala
-        
-        sisemine_raam.bind(
-            "<Configure>",
-            lambda e: canvas.configure(
-                scrollregion=canvas.bbox("all")
-            )
-        )
-    # Koostisosade kogumine JSON-failist
+
+        veergude_arv = 4
+
+        ruudustik_raam = tk.Frame(self.koostisosade_paneel, bg=tausta_värv)
+        ruudustik_raam.pack(fill="x", padx=10)
+
+        for veerg in range(veergude_arv):
+            ruudustik_raam.columnconfigure(veerg, weight=1, uniform="koostisosa")
+
+        # Koostisosade kogumine JSON-failist
 
         koostisosad = set()
-            
+
         for retsept in self.retseptid:
             for koostisosa in retsept["koostisosad"]:
                 koostisosad.add(koostisosa["nimi"])
-            
-        koostisosad = sorted(koostisosad)
-            
+
+        koostisosad = sorted(koostisosad, key=str.lower)
+
         self.valitud_koostisosad = {}
-            
+
+        rida = 0
+        veerg = 0
+
         for nimi in koostisosad:
             muutuja = tk.BooleanVar(value=False)
             self.valitud_koostisosad[nimi] = muutuja
-                
+
             valik = tk.Checkbutton(
-                sisemine_raam,
-                text=nimi,
-                variable=muutuja,
-                bg=tausta_värv,
-                fg="black",
+                ruudustik_raam,
+                text = nimi,
+                variable = muutuja,
+                bg = tausta_värv,
+                fg = "black",
                 activebackground=tausta_värv,
                 activeforeground="black",
                 anchor="w"
             )
-            valik.pack(fill="x", padx=20, pady=2)
-    
-    # Hiirerattaga kerimine
-    
-        def keri(event):
-            if event.delta:
-                canvas.yview_scroll(
-                    int(-event.delta / 120) or
-                    (-1 if event.delta > 0 else 1),
-                    "units"
-                )
-                
-        canvas.bind(
-            "<Enter>",
-            lambda e: canvas.bind_all("<MouseWheel>", keri)
-        )
-        canvas.bind(
-            "<Leave>",
-            lambda e: canvas.unbind_all("<MouseWheel>")
-        )
+
+            valik.grid(row=rida, column=veerg, sticky="w", padx=5, pady=2)
+
+            veerg += 1
+
+            if veerg == veergude_arv:
+                veerg = 0
+                rida += 1
         
     # Retseptide otsimise nupp 
         
@@ -247,8 +198,8 @@ class RetseptiRakendus:
         )
         otsi_nupp.pack(pady=10)
     
-    def leia_retseptid_koostisosade_jargi(self, valitud):
-        leitud_retseptid = []
+    def leia_retseptid_koostisosade_jargi(self, valitud, lubatud_puudu=0):
+        leitud_paarid = []
 
         for retsept in self.retseptid:
             vajalikud = set()
@@ -256,10 +207,22 @@ class RetseptiRakendus:
             for koostisosa in retsept["koostisosad"]:
                 vajalikud.add(koostisosa["nimi"])
 
-            if vajalikud.issubset(valitud):
-                leitud_retseptid.append(retsept)
+            puuduvad = vajalikud.difference(valitud)
+
+            if len(puuduvad) <= lubatud_puudu:
+                leitud_paarid.append((len(puuduvad), retsept))
+
+        leitud_paarid.sort(key=self.puuduvate_arv)
+
+        leitud_retseptid = []
+
+        for puuduvate_arv, retsept in leitud_paarid:
+            leitud_retseptid.append(retsept)
 
         return leitud_retseptid
+
+    def puuduvate_arv(self, paar):
+        return paar[0]
     
     def otsi_koostisosade_jargi(self):
         valitud = set()
@@ -272,7 +235,7 @@ class RetseptiRakendus:
             self.kuva_kaardid(self.retseptid)
             return
         
-        leitud = self.leia_retseptid_koostisosade_jargi(valitud)
+        leitud = self.leia_retseptid_koostisosade_jargi(valitud, lubatud_puudu=2)
         self.kuva_kaardid(leitud)
         
 
