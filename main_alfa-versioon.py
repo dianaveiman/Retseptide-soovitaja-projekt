@@ -5,14 +5,25 @@ Kasutaja saab otsida retsepte või sisestada kodus olemasolevad toiduained,
 mille põhjal programm pakub sobivaid retsepte. 
 Programm näitab ka retseptide valmistamiseks vajalikke koostisosi ja valmistamisjuhiseid.
 
-Autorid: 
+Autorid: Naomi Maria Šamber ja Diana Veiman
+
+Tööjaotus:
+1. Diana - retseptide andmebaas, koostisosade valimine, retseptide otsimine koostisosade 
+   järgi ja testimine.
+
+2. Naomi - graafiline kasutajaliides, retseptikaardid, retseptide otsimine nime järgi, 
+   koodi täiustamine ja dokumenteerimine.
+
+Tehisaru kasutamine:
+Projekti koostamisel kasutati ChatGPT abi Pythoni koodi
+selgitamiseks, vigade leidmiseks ja parandamiseks.
 
 Kasutatud allikad: 
 1. https://docs.python.org/3/
 2. https://www.w3schools.com/python/default.asp
 3. https://www.geeksforgeeks.org/python/python-programming-language-tutorial/
 4. https://www.pythontutorial.net/tkinter/tkinter-command/
-5.
+5. Retseptide allikad on esitatud README.md failis.
 ...
 
 Andmed loetakse failist Retseptid.json, mis peab asuma programmiga samas kaustas.
@@ -227,7 +238,7 @@ class RetseptiRakendus:
                 uniform="koostisosa"
             )
 
-        # Koostisosade kogumine JSON-failist
+    """Kogume kõikide retseptide koostisosad ühte hulka."""
 
         koostisosad = set()
 
@@ -293,7 +304,7 @@ class RetseptiRakendus:
 
             puuduvad = vajalikud.difference(valitud)
 
-            if len(puuduvad) <= lubatud_puudu:
+            if vajalikud.intersection(valitud) and len(puuduvad) <= lubatud_puudu:
                 leitud_paarid.append((len(puuduvad), retsept))
 
         leitud_paarid.sort(key=self.puuduvate_arv)
