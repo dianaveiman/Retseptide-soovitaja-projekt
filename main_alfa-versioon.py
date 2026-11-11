@@ -7,12 +7,17 @@ Programm näitab ka retseptide valmistamiseks vajalikke koostisosi ja valmistami
 
 Autorid: Naomi Maria Šamber ja Diana Veiman
 
-Tööjaotus:
-1. Diana - retseptide andmebaas, koostisosade valimine, retseptide otsimine koostisosade 
-   järgi ja testimine.
+Koostöö on seni hästi sujunud. Oleme peamiselt suhelnud Zulipi vahendusel ning üksteist vajadusel aidanud. 
+Jagasime ülesanded omavahel ära: Diana tegeles retseptide andmebaasi loomisega JSON-vormingus, 
+koostisosade valimise ja nende põhjal retseptide otsimise funktsioonidega ning programmi testimisega. 
+Naomi tegeles peamiselt graafilise kasutajaliidese, retseptikaartide ja retseptide nime järgi otsimise funktsiooni loomisega 
+ning koodi täiustamise ja dokumenteerimisega. Programmi arendasime ja parandasime koostöös. 
+Projektile on seni kulunud kokku umbes 24 tundi.
 
-2. Naomi - graafiline kasutajaliides, retseptikaardid, retseptide otsimine nime järgi, 
-   koodi täiustamine ja dokumenteerimine.
+Edaspidi plaanime lisada retseptidele pildid, täiendada JSON-failis olevat retseptide andmebaasi, 
+näidata kasutajale puuduvaid koostisosi ning lisada retseptide filtreerimise kategooriate järgi (näiteks hommikusöök, lõunasöök ja õhtusöök). 
+Samuti soovime lisada retseptide kalorisisalduse ning valkude, rasvade ja süsivesikute kogused. 
+Lisaks plaanime muuta programmi kasutajaliidest mugavamaks ja teha täiendavaid teste, et veenduda kõigi funktsioonide korrektses toimimises.
 
 Tehisaru kasutamine:
 Projekti koostamisel kasutati ChatGPT abi Pythoni koodi
@@ -24,7 +29,6 @@ Kasutatud allikad:
 3. https://www.geeksforgeeks.org/python/python-programming-language-tutorial/
 4. https://www.pythontutorial.net/tkinter/tkinter-command/
 5. Retseptide allikad on esitatud README.md failis.
-...
 
 Andmed loetakse failist Retseptid.json, mis peab asuma programmiga samas kaustas.
 """
